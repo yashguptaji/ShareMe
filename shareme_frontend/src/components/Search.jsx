@@ -31,7 +31,9 @@ const Search = ({ searchTerm }) => {
 			{loading && <Spinner message="Searching for pins" />}
 			{pins?.length !== 0 && <MasonryLayout pins={pins} />}
 			{pins?.length === 0 && searchTerm !== "" && !loading && (
-				<div className="mt-10 text-center text-xl">No pins found!</div>
+				<div className="mt-10 dark:bg-slate-900 dark:text-white text-center text-xl">
+					No pins found!
+				</div>
 			)}
 		</div>
 	);

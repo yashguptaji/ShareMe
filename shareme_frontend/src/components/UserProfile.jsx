@@ -17,9 +17,9 @@ const randomImage =
 	"https://source.unsplash.com/1600x900/?nature,photography,technology";
 
 const activeBtnStyles =
-	"bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none";
+	"bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none dark:text-black ";
 const notActiveBtnStyles =
-	"bg-primary mr-4 text-black font-bold p-2 rounded-full w-20 outline-none";
+	"bg-primary mr-4 text-black font-bold p-2 rounded-full w-20 outline-none dark:text-white";
 
 const UserProfile = () => {
 	const [user, setUser] = useState(null);
@@ -64,7 +64,7 @@ const UserProfile = () => {
 	}
 
 	return (
-		<div className="relative pb-2 h-full justify-center items-center">
+		<div className="relative pb-2 h-full justify-center items-center dark:bg-slate-900 dark:text-white ">
 			<div className="flex flex-col pb-5">
 				<div className="relative flex flex-col mb-7">
 					<div className="flex flex-col justify-center items-center">
@@ -101,7 +101,7 @@ const UserProfile = () => {
 							)}
 						</div>
 					</div>
-					<div className="text-center mb-7">
+					<div className="text-center mb-7 dark:text-white">
 						<button
 							type="button"
 							onClick={(e) => {
